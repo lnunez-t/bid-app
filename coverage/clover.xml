@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1750777109622" clover="3.2.0">
+  <project timestamp="1750777109622" name="All files">
+    <metrics statements="56" coveredstatements="56" conditionals="27" coveredconditionals="27" methods="9" coveredmethods="9" elements="92" coveredelements="92" complexity="0" loc="56" ncloc="56" packages="4" files="5" classes="5"/>
+    <package name="controllers">
+      <metrics statements="23" coveredstatements="23" conditionals="15" coveredconditionals="15" methods="2" coveredmethods="2"/>
+      <file name="bidController.ts" path="/home/lnunez-t/Documents/POST-CC/Perso/Kuu/bid_app/src/controllers/bidController.ts">
+        <metrics statements="23" coveredstatements="23" conditionals="15" coveredconditionals="15" methods="2" coveredmethods="2"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="6" type="stmt"/>
+        <line num="9" count="6" type="cond" truecount="5" falsecount="0"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="13" count="5" type="stmt"/>
+        <line num="14" count="5" type="cond" truecount="4" falsecount="0"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="18" count="4" type="stmt"/>
+        <line num="19" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="23" count="3" type="stmt"/>
+        <line num="24" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="25" count="2" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="35" count="2" type="stmt"/>
+        <line num="36" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="routes">
+      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="bidRoutes.ts" path="/home/lnunez-t/Documents/POST-CC/Perso/Kuu/bid_app/src/routes/bidRoutes.ts">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="services">
+      <metrics statements="25" coveredstatements="25" conditionals="12" coveredconditionals="12" methods="6" coveredmethods="6"/>
+      <file name="bidService.ts" path="/home/lnunez-t/Documents/POST-CC/Perso/Kuu/bid_app/src/services/bidService.ts">
+        <metrics statements="14" coveredstatements="14" conditionals="8" coveredconditionals="8" methods="4" coveredmethods="4"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="26" type="cond" truecount="2" falsecount="0"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="7" count="26" type="stmt"/>
+        <line num="8" count="26" type="cond" truecount="2" falsecount="0"/>
+        <line num="9" count="26" type="cond" truecount="2" falsecount="0"/>
+        <line num="10" count="24" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="15" count="6" type="stmt"/>
+        <line num="16" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="18" count="4" type="stmt"/>
+        <line num="19" count="21" type="stmt"/>
+        <line num="20" count="25" type="stmt"/>
+      </file>
+      <file name="sessionService.ts" path="/home/lnunez-t/Documents/POST-CC/Perso/Kuu/bid_app/src/services/sessionService.ts">
+        <metrics statements="11" coveredstatements="11" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="9" type="stmt"/>
+        <line num="7" count="9" type="stmt"/>
+        <line num="8" count="9" type="stmt"/>
+        <line num="9" count="9" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="13" count="7" type="stmt"/>
+        <line num="14" count="7" type="cond" truecount="4" falsecount="0"/>
+        <line num="16" count="4" type="stmt"/>
+      </file>
+    </package>
+    <package name="utils">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="generateSessionKey.ts" path="/home/lnunez-t/Documents/POST-CC/Perso/Kuu/bid_app/src/utils/generateSessionKey.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="9" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
