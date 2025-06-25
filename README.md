@@ -12,8 +12,7 @@ Permettre à des utilisateurs identifiés via une clé de session (`sessionKey`)
 
 ### 1. Cloner le dépôt
 
-git clone <url-du-depot> bid_app
-cd bid_app
+git clone <url-du-depot> bid_app puis cd bid_app
 
 ### 2. Installer les dependances
 
@@ -21,39 +20,37 @@ npm install
 
 ### 3. Lancer le serveur
 
-npm run build
-npm start
+npm run build puis npm start
 
 Le serveur demarre par defaut sur le port 4336.
 
 📮 Endpoints disponibles
 
-GET pour recuperer le userId
-curl -X GET "http://localhost:4336/<userId>/login"
+GET pour recuperer le userId : curl -X GET "http://localhost:4336/userId/login"
 
-POST pour soumettre une enchere
-curl -X POST "http://localhost:4336/<itemID>/bid?sessionKey=<SECRET_KEY>" -H "Content-Type: text/plain" -d "<bidValue>"
+POST pour soumettre une enchere : curl -X POST "http://localhost:4336/itemID/bid?sessionKey=<SECRET_KEY>" -H "Content-Type: text/plain" -d "bidValue"
 
-GET pour recuperer les 15 meilleures encheres
-curl -X GET "http://localhost:4336/<itemID>/topBidList"
+GET pour recuperer les 15 meilleures encheres : curl -X GET "http://localhost:4336/itemID/topBidList"
 
-### 4. 🧪 Lancer les tests
+### 4. Lancer les tests
 
 Les tests sont écrits avec Jest et couvrent les cas principaux.
 
 + Installer les types manquants (si besoin)
+
 npm install --save-dev @types/jest @types/supertest
 
 + Exécuter les tests
+
 npm test
 
 + Couverture testée :
 
-- Enchères valides
-- ID d'article invalide
-- Session expirée ou invalide
-- Récupération des meilleures offres
-- Multiples enchères sur le même article
+-Enchères valides
+-ID d'article invalide
+-Session expirée ou invalide
+-Récupération des meilleures offres
+-Multiples enchères sur le même article
 
 ⚙️ Technologies
 
@@ -97,8 +94,7 @@ The API allows users to:
 
 ### 1. Clone the repository
 
-git clone <your-repo-url> bid-app
-cd bid_app
+git clone <your-repo-url> bid-app then cd bid_app
 
 ### 2. Install dependencies
 
@@ -106,23 +102,19 @@ npm install
 
 ### 3. Run the server
 
-npm run build
-npm start
+npm run build then npm start
 
 The server runs on http://localhost:4336 by default.
 
 📮 Available Endpoints
 
-GET to get userId
-curl -X GET "http://localhost:4336/<userId>/login"
+GET to get userId : curl -X GET "http://localhost:4336/userId/login"
 
-POST to send a bid
-curl -X POST "http://localhost:4336/<itemID>/bid?sessionKey=<SECRET_KEY>" -H "Content-Type: text/plain" -d "<bidValue>"
+POST to send a bid : curl -X POST "http://localhost:4336/itemID/bid?sessionKey=<SECRET_KEY>" -H "Content-Type: text/plain" -d "bidValue"
 
-GET to get the top 15 bids
-curl -X GET "http://localhost:4336/<itemID>/topBidList"
+GET to get the top 15 bids : curl -X GET "http://localhost:4336/itemID/topBidList"
 
-### 4. 🧪 Running tests tests
+### 4.  Running tests
 
 Tests were done using Jest and include the main cases.
 
@@ -136,11 +128,11 @@ npm test
 
 + Covered scenarios
 
-- Valid bid submission
-- Invalid item ID
-- Invalid or expired session
-- Multiple bids on the same item
-- Retrieving top bids
+-Valid bid submission
+-Invalid item ID
+-Invalid or expired session
+-Multiple bids on the same item
+-Retrieving top bids
 
 ⚙️ Tech Stack
 
@@ -157,5 +149,4 @@ The server is optimized to handle multiple simultaneous requests in memory safel
 
 👩‍💻 Author
 
-Project by Laura Nunez Torres - June 2025
-For Kuupanda Technical Test.
+Project by Laura Nunez Torres for Kuupanda Technical Test - June 2025
