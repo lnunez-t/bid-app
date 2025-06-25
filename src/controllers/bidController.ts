@@ -27,9 +27,9 @@ export const postBid = (req: Request, res: Response) => {
     return res.status(403).send("Invalid or expired session");
   }
 
-  //Parse the bid value from the request body
+  //Parse the bid value from the request body and check if it is valid
   const bidValue = parseFloat(req.body);
-  if (isNaN(bidValue)) {
+  if (isNaN(bidValue) || bidValue <= 0) {
     return res.status(400).send("Invalid bid value");
   }
 
@@ -46,7 +46,7 @@ export const getTopBids = (req: Request, res: Response): Response => {
   const itemId = parseInt(req.params.itemID);
 
   //Validate the itemID
-  if (isNaN(itemId)) {
+  if (!Number.isInteger(itemId) || itemId < 0 || itemId >= 2**31) {
     return res.status(400).send("Invalid item ID");
   }
 

@@ -47,9 +47,13 @@ npm test
 + Couverture testée :
 
 -Enchères valides
+
 -ID d'article invalide
+
 -Session expirée ou invalide
+
 -Récupération des meilleures offres
+
 -Multiples enchères sur le même article
 
 ⚙️ Technologies
@@ -129,9 +133,13 @@ npm test
 + Covered scenarios
 
 -Valid bid submission
+
 -Invalid item ID
+
 -Invalid or expired session
+
 -Multiple bids on the same item
+
 -Retrieving top bids
 
 ⚙️ Tech Stack
